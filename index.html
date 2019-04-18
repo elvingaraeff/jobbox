@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,18 +27,13 @@
 						</li>
 						<li>
 							<a href="summary.html">
-								Резюме
+								Резюме (скоро)
 							</a>
 						</li>
 					</ul>
 				</li>
 				<li class="right">
 					<ul>
-						<li>
-							<a href="bonuses.html">
-								Бонусы
-							</a>
-						</li>
 						<li>
 							<ul>
 								<li>
@@ -81,9 +77,64 @@
 					</button>
 				</li>
 				<li class="right">
-					<a href="vacancy-post.html">
-						Разместить вакансию
-					</a>
+					<button class="post-vacancy-btn">
+						<span>
+							Разместить вакансию
+						</span>
+
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="1" d="M11.0711 6.00002L6.03552 11.0356L0.999977 6.00002" stroke="white"/>
+						</svg>
+
+						<div class="dropdown">
+							<ul>
+								<li>
+									<a href="vacancy-post.html" class="dropdown-item">
+										<ul>
+											<li>
+												<div class="plus">
+													<img src="img/plus.svg" alt="">
+												</div>
+											</li>
+											<li>
+												<span>
+													Бесплатное размещение
+												</span>
+												<label>
+													Заполните форму
+													с необходимыми полями
+												</label>
+											</li>
+										</ul>
+									</a>
+								</li>
+								<li>
+									<a href="vacancy-post-premium.html" class="dropdown-item">
+										<ul>
+											<li>
+												<img src="img/nitro.svg" alt="">
+											</li>
+											<li>
+												<span>
+													Быстрое размещение
+												</span>
+												<label>
+													С помощью текстового
+													или аудиосообщения
+												</label>
+												<div>
+													<img src="img/button-img-1.svg" alt="">
+													<img src="img/button-img-2.svg" alt="">
+												</div>
+											</li>
+										</ul>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</button>
+
+
 				</li>
 			</ul>
 		</div>
@@ -106,14 +157,11 @@
 								<label>
 									Категория
 								</label>
-								<select>
-									<option value="0" selected>
-										Информационные технологии
-									</option>
-									<option value="1">Информационные технологии</option>
-									<option value="2">Информационные технологии</option>
+								<select class="large-search-1">
+									<option value="0">Не имеет значения</option>
+									<option value="1">Дизайн</option>
+									<option value="2">Образование и наука</option>
 									<option value="3">Информационные технологии</option>
-									<option value="4">Информационные технологии</option>
 								</select>
 							</div>
 						</li>
@@ -122,7 +170,7 @@
 								<label>
 									Категория
 								</label>
-								<select>
+								<select class="large-search-2">
 									<option value="0" selected>
 										Не имеет значения
 									</option>
@@ -138,7 +186,7 @@
 								<label>
 									Категория
 								</label>
-								<select>
+								<select class="large-search-3">
 									<option value="0" selected>
 										Не имеет значения
 									</option>
@@ -176,6 +224,7 @@
 	</section>
 	<!-- Large search panel end -->
 
+
 	<!-- Header bottom panel begin -->
 	<section class="header-bottom-panel">
 		<div class="container">
@@ -187,66 +236,99 @@
 					<a href="category.html">
 						<i class="fas fa-users"></i>
 						<span>Администрация</span>
+						<div class="count">
+							25
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-money-bill-wave"></i>
 						<span>Финансы</span>
+						<div class="count">
+							48
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-palette"></i>
 						<span>Дизайн</span>
+						<div class="count">
+							15
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-bullhorn"></i>
 						<span>Маркетинг</span>
+						<div class="count">
+							51
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-laptop"></i>
 						<span>Информационные технологии</span>
+						<div class="count">
+							11
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-graduation-cap"></i>
 						<span>Образование и наука</span>
+						<div class="count">
+							55
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-users"></i>
 						<span>Продажи</span>
+						<div class="count">
+							69
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-users"></i>
 						<span>Обслуживание</span>
+						<div class="count">
+							88
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-users"></i>
 						<span>Юриспруденция</span>
+						<div class="count">
+							7
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-users"></i>
 						<span>Без опыта работы</span>
+						<div class="count">
+							18
+						</div>
 					</a>
 				</li>
 				<li>
 					<a href="category.html">
 						<i class="fas fa-users"></i>
 						<span>Другое</span>
+						<div class="count">
+							39
+						</div>
 					</a>
 				</li>
 			</ul>
@@ -292,14 +374,20 @@
 								<span>
 									Специалист по продажам
 								</span>
-								<i class="fas fa-fire fire"></i>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
-						<i class="fas fa-fire fire"></i>
-						<ul>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
+						<ul class="chosen-bottom">
 							<li>
 								800-1000 AZN
 							</li>
@@ -316,12 +404,43 @@
 								<span>
 									Менеджер по продажам
 								</span>
-								<i class="fas fa-fire fire"></i>
+								<div class="icon-pack">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
+						<div class="price">
+							600 AZN <span>+ %</span>
+						</div>
+					</a>
+				</li>
+				<li class="simple">
+					<a href="category-view.html">
+						<div class="title">
+							<span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
+							</span>
+						</div>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -332,11 +451,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -347,11 +474,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -362,11 +497,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -377,11 +520,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -392,11 +543,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -407,11 +566,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -422,11 +589,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -437,26 +612,19 @@
 						<div class="title">
 							<span>
 								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
-						<div class="price">
-							600 – 900 AZN
-						</div>
-					</a>
-				</li>
-				<li class="simple">
-					<a href="category-view.html">
-						<div class="title">
-							<span>
-								<span>Менеджер по продажам</span>
-							</span>
-						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -467,7 +635,7 @@
 	</section>
 	<!-- Last vacancies end -->
 
-	<!-- Popular vacancies begin -->
+	<!-- Last vacancies begin -->
 	<section class="premium-vacancies">
 		<div class="container">
 			<h2>
@@ -504,14 +672,20 @@
 								<span>
 									Специалист по продажам
 								</span>
-								<i class="fas fa-star star"></i>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
-						<i class="fas fa-star star"></i>
-						<ul>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
+						<ul class="chosen-bottom">
 							<li>
 								800-1000 AZN
 							</li>
@@ -528,12 +702,43 @@
 								<span>
 									Менеджер по продажам
 								</span>
-								<i class="fas fa-star star"></i>
+								<div class="icon-pack">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
+						<div class="price">
+							600 AZN <span>+ %</span>
+						</div>
+					</a>
+				</li>
+				<li class="simple">
+					<a href="category-view.html">
+						<div class="title">
+							<span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
+							</span>
+						</div>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -543,14 +748,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -560,14 +771,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -577,14 +794,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -594,14 +817,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -611,14 +840,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -628,14 +863,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -645,14 +886,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -662,31 +909,20 @@
 					<a href="category-view.html">
 						<div class="title">
 							<span>
-								<span>
-									Менеджер по продажам
-								</span>
+								<span>Менеджер по продажам</span>
+								<div class="icon-pack">
+									<i class="fas fa-fire"></i>
+								</div>
 							</span>
 						</div>
-						<span class="company">
-							Adventa
-						</span>
-						<div class="price">
-							600 – 900 AZN
-						</div>
-					</a>
-				</li>
-				<li class="simple">
-					<a href="category-view.html">
-						<div class="title">
-							<span>
-								<span>
-									Менеджер по продажам
-								</span>
-							</span>
-						</div>
-						<span class="company">
-							Adventa
-						</span>
+						<ul class="address">
+							<li>
+								Adventa
+							</li>
+							<li>
+								Баку
+							</li>
+						</ul>
 						<div class="price">
 							600 – 900 AZN
 						</div>
@@ -695,7 +931,7 @@
 			</ul>
 		</div>
 	</section>
-	<!-- Popular vacancies end -->
+	<!-- Last vacancies end -->
 
 	<!-- Best employers begin -->
 	<section class="best-employers">
@@ -731,7 +967,9 @@
 		<div class="all-vacancies">
 			<div class="container">
 				<a href="category-view.html">
-					Смотреть все вакансии
+					<span>
+						Смотреть все вакансии
+					</span>
 				</a>
 			</div>
 		</div>
@@ -935,6 +1173,7 @@
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

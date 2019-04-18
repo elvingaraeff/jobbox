@@ -176,241 +176,144 @@
 </section>
 <!-- Large search panel end -->
 
-<!-- Post panel begin -->
-<section class="post">
+<!-- Premium post begin -->
+<section class="premium-post">
     <div class="container">
-        <h3>
-            Разместить вакансию
-        </h3>
+        <h2>
+            <img src="img/nitro.svg" alt="">
+            <span>Быстрое размещение вакансии</span>
+        </h2>
 
-        <form action="vacancy-posting.html" class="post-form">
-            <ul class="form-ul">
-                <li class="left form-section current">
-                    <div class="header">
-                        <span>1.</span> Описание вакансии
-                    </div>
+        <ul class="premium-post-ul">
+            <li class="left active">
+                <div class="title-bar">
+                    <div class="title-bar-inside active">
+                        <img src="img/subtract.svg" alt="">
+                        <span>
+                            С помощью текстового сообщения
+                        </span>
+                        <div class="title-price">
+                        <span>
+                            20
+                        </span>
+                            <img src="img/manat.svg" alt="">
+                        </div>
 
-                    <div class="label-part select-part">
-                        <label>
-                            Категория
-                        </label>
-                        <select class="required sss" required>
-                            <option value="">
-                                Выберите категорию
-                            </option>
-                            <option value="1">
-                                Информационные технологии
-                            </option>
-                            <option value="2">
-                                2
-                            </option>
-                            <option value="3">
-                                3
-                            </option>
-                        </select>
-                    </div>
-
-                    <div class="label-part">
-                        <label>
-                            Должность
-                        </label>
-                        <input type="text" class="required" placeholder="Название вакантного места" required>
-                    </div>
-
-                    <div class="label-part select-part">
-                        <label>
-                            Город
-                        </label>
-                        <select class="required" required>
-                            <option value="">
-                                Выберите город
-                            </option>
-                            <option value="1">
-                                Баку
-                            </option>
-                            <option value="2">
-                                2
-                            </option>
-                            <option value="3">
-                                3
-                            </option>
-                        </select>
-                    </div>
-
-                    <div class="label-part">
-                        <label>
-                            Зарплата
-                        </label>
-                        <div class="label-price-div">
-                            <div class="input-price">
-                                <input type="number" class="required" placeholder="0" required>
-                                <span>-</span>
-                                <input type="number" class="required" placeholder="16 000" required>
-                            </div>
-
+                        <i class="fas fa-question-circle">
                             <div>
-                                <input type="checkbox" id="price-checkbox">
-                                <label for="price-checkbox">
-                                    и проценты от продаж
-                                </label>
+                                Инфо о <span>виде размещения</span>. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения.
+                            </div>
+                        </i>
+                    </div>
+                </div>
+
+                <form action="vacancy-posting.html" id="vacancy-with-text">
+                    <div class="label-part">
+                        <label>
+                            Информация о вакансии:
+                        </label>
+                        <div class="textarea-part">
+                            <textarea placeholder="Описание полномочий, требований и условий" required></textarea>
+
+                            <div class="bottom-part">
+                                <input type="file" id="example-file">
+                                <div class="chosen-file">
+                                    <span class="name">
+
+                                    </span>
+                                    <span class="size"></span>
+                                    <div class="delete">
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.197064 7.80303C-0.0654794 7.54048 -0.0654794 7.11481 0.197064 6.85226L6.85234 0.19691C7.11488 -0.0656366 7.54055 -0.0656366 7.80309 0.19691C8.06564 0.459456 8.06564 0.885128 7.80309 1.14767L1.14782 7.80303C0.885274 8.06557 0.459607 8.06557 0.197064 7.80303Z" fill="#828282"/>
+                                            <path d="M7.80294 7.80309C7.54039 8.06564 7.11473 8.06564 6.85218 7.80309L0.196908 1.14774C-0.0656358 0.885191 -0.0656359 0.459519 0.196907 0.196973C0.459451 -0.0655734 0.885118 -0.0655735 1.14766 0.196973L7.80294 6.85233C8.06548 7.11487 8.06548 7.54054 7.80294 7.80309Z" fill="#828282"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="choose-file">
+                                    <i class="fas fa-paperclip"></i>
+                                    <span>
+                                        Прикрепить файлы
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="label-part">
-                        <label>
-                            Возраст
-
-                            <span>
-                                Не обязательно
-                            </span>
-                        </label>
-                        <ul class="input-ul">
-                            <li>
-                                <span>От</span>
-                                <input type="number" class="required" placeholder="18" maxlength="2" minlength="2">
-                            </li>
-                            <li>
-                                <span>До</span>
-                                <input type="number" class="required" placeholder="75" maxlength="2" minlength="2">
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="label-part">
-                        <ul class="select-ul">
-                            <li>
-                                <label>
-                                    Образование
-                                </label>
-                                <select class="required" required>
-                                    <option value="">
-                                        Выберите
-                                    </option>
-                                    <option value="1">
-                                        Не важно
-                                    </option>
-                                    <option value="2">
-                                        2
-                                    </option>
-                                    <option value="3">
-                                        3
-                                    </option>
-                                </select>
-                            </li>
-                            <li>
-                                <label>
-                                    Опыт работы
-                                </label>
-                                <select class="required" required>
-                                    <option value="">
-                                        Выберите
-                                    </option>
-                                    <option value="1">
-                                        От 1 года до 3 лет
-                                    </option>
-                                    <option value="2">
-                                        2
-                                    </option>
-                                    <option value="3">
-                                        3
-                                    </option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="label-part">
-                        <label>
-                            Обязанности
-                        </label>
-                        <textarea class="required" placeholder="Описание полномочий" required></textarea>
-                    </div>
-
-                    <div class="label-part">
-                        <label>
-                            Требования и условия:
-                        </label>
-                        <textarea class="required" placeholder="Описание работы" required></textarea>
-                    </div>
-
-                    <button class="next-part">
-                        Далее
-                    </button>
-                </li>
-
-                <li class="right form-section deactive">
-                    <div class="header">
-                        <span>2.</span> Контактые данные
-                    </div>
-
-                    <div class="label-part">
-                        <label>
-                            Номер телефона
-                        </label>
-                        <div class="label-phone-div">
-                            <div class="input-price">
-                                <input type="text" class="phone" placeholder="012 345 67 89" required maxlength="10">
-                            </div>
-
-                            <input type="checkbox" id="phone-checkbox-1">
-                            <label for="phone-checkbox-1">
-                                Отображать в объявлении
-                            </label>
-                        </div>
-                        <a href="javascript:;;" class="add-number">
-                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.25 7.03125V7.96875C11.25 8.16211 11.0918 8.32031 10.8984 8.32031H8.32031V10.8984C8.32031 11.0918 8.16211 11.25 7.96875 11.25H7.03125C6.83789 11.25 6.67969 11.0918 6.67969 10.8984V8.32031H4.10156C3.9082 8.32031 3.75 8.16211 3.75 7.96875V7.03125C3.75 6.83789 3.9082 6.67969 4.10156 6.67969H6.67969V4.10156C6.67969 3.9082 6.83789 3.75 7.03125 3.75H7.96875C8.16211 3.75 8.32031 3.9082 8.32031 4.10156V6.67969H10.8984C11.0918 6.67969 11.25 6.83789 11.25 7.03125ZM14.7656 7.5C14.7656 11.5137 11.5137 14.7656 7.5 14.7656C3.48633 14.7656 0.234375 11.5137 0.234375 7.5C0.234375 3.48633 3.48633 0.234375 7.5 0.234375C11.5137 0.234375 14.7656 3.48633 14.7656 7.5ZM13.3594 7.5C13.3594 4.2627 10.7373 1.64062 7.5 1.64062C4.2627 1.64062 1.64062 4.2627 1.64062 7.5C1.64062 10.7373 4.2627 13.3594 7.5 13.3594C10.7373 13.3594 13.3594 10.7373 13.3594 7.5Z" fill="#FFBF00"/>
-                            </svg>
-                            <span>
-                                Добавить еще один номер телефона
-                            </span>
-                        </a>
                     </div>
 
                     <div class="label-part">
                         <label>
                             Email
                         </label>
-                        <input type="email" placeholder="info@jobbox.az" required>
+                        <input type="email" autocomplete="off" placeholder="info@jobbox.az" required>
                     </div>
 
                     <div class="label-part">
                         <label>
-                            Контактное лицо
+                            Номер телефона
                         </label>
-                        <input type="text" placeholder="Айнур ханум" required>
+                        <input type="text" class="phone" autocomplete="off" placeholder="012 345 67 89" required>
                     </div>
 
-                    <div class="label-part">
-                        <label>
-                            Название компании
-                        </label>
-                        <input type="text" id="autocomplete" placeholder="Название компании, фирмы или заведения" required>
-                    </div>
+                    <button class="submit" type="submit">
+                        Перейти к оплате
+                    </button>
 
-                    <div class="checkbox-part">
-                        <input type="checkbox" id="labor-exchange">
-                        <label for="labor-exchange">
-                            Трудовая биржа
-                        </label>
-                    </div>
-
-                    <!--<button class="submit" type="submit">-->
-                        <!--Разместить вакансию-->
-                    <!--</button>-->
-                    <input type="submit" value="Разместить вакансию" class="submit">
-
-                    <div class="vacancy-info">
+                    <div class="agree">
                         Нажимая на кнопку вы соглашаетесь
-                        с <a href="terms_and_conditions.hmtl">условиями использования сайта</a>
+                        с <a href="#">условиями использования сайта</a>
                     </div>
-                </li>
-            </ul>
-        </form>
+                </form>
+            </li>
+
+            <li class="right deactive">
+                <div class="title-bar">
+                    <div class="title-bar-inside">
+                        <img src="img/audio.svg" alt="">
+                        <span>
+                            С помощью аудиосообщения
+                        </span>
+                        <div class="title-price">
+                        <span>
+                            20
+                        </span>
+                            <img src="img/manat.svg" alt="">
+                        </div>
+
+                        <i class="fas fa-question-circle">
+                            <div>
+                                Инфо о <span>виде размещения</span>. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения. Инфо о виде размещения.
+                            </div>
+                        </i>
+                    </div>
+                </div>
+
+                <form action="vacancy-posting.html" id="vacancy-with-audio">
+                    <div class="info-text">
+                        Получите код удачной оплаты и отправьте его нам вместе с сообщением с информацией о вакансии.
+                        <br><br>
+                        Наш модератор обработает информацию и разместит вакансию. В случае вопросов
+                    </div>
+
+                    <div class="label-part">
+                        <label>
+                            Email
+                        </label>
+                        <input type="email" autocomplete="off" placeholder="info@jobbox.az" required>
+                    </div>
+
+                    <button class="submit" type="submit">
+                        Перейти к оплате
+                    </button>
+
+                    <div class="agree">
+                        Нажимая на кнопку вы соглашаетесь
+                        с <a href="#">условиями использования сайта</a>
+                    </div>
+                </form>
+            </li>
+        </ul>
     </div>
 </section>
-<!-- Post panel end -->
+<!-- Premium post end -->
 
 <!-- Footer begin -->
 <footer>
