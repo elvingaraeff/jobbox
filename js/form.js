@@ -1,5 +1,6 @@
 var parsleyVar;
 var phoneClone;
+var phoneCount = 1;
 
 $(function () {
     var $sections = $('.form-section');
@@ -30,15 +31,12 @@ $(function () {
         topheighterror = $('body').find('.post').offset().top;
         topheightsuccess = $('body').find('.post .right').offset().top;
     });
-    $(window).scroll(function () {
-        console.log($(window).scrollTop())
-    })
 
     $('.next-part').click(function() {
         $('.right.form-section').addClass('hide-errors');
         setTimeout(function () {
             if ($('.left.form-section .parsley-error').length === 0) {
-                $('html, body').animate({scrollTop:topheightsuccess}, 1000);
+                $('html, body').animate({scrollTop:topheightsuccess - 100}, 1000);
                 $('body').find('.next-part').hide();
                 $('body').find('.deactive').removeClass('deactive');
             } else {
@@ -65,11 +63,35 @@ $(function () {
 });
 
 $(document).on('click','.add-number', function () {
-    $(phoneClone).insertAfter('.label-phone-div:last');
-    var count = $('.label-phone-div').length;
-    $('.label-phone-div:last label').attr('for', 'phone-checkbox-'+count);
-    $('.label-phone-div:last [type="checkbox"]').attr('id', 'phone-checkbox-'+count);
-    $('.phone').mask('000 000 00 00');
+    phoneCount = phoneCount + 1;
+
+    if(phoneCount <= 3){
+        $(phoneClone).insertAfter('.label-phone-div:last');
+
+        var index = parseInt($('.label-phone-div-parent>div').length);
+
+        $('.label-phone-div-parent>div:last label').attr('for', 'phone-checkbox-' + index);
+        $('.label-phone-div-parent>div:last [type="checkbox"]').attr('id', 'phone-checkbox-' + index);
+        $('.phone').mask('000 000 00 00');
+
+        $('.label-phone-div-parent>div:last input[type="text"]').attr('name', 'phones['+ index +'][phone]');
+        $('.label-phone-div-parent>div:last input[type="checkbox"]').attr('name', 'phones['+ index +'][display]');
+    } else {
+        $('body').find('.add-number').hide();
+        $('body').find('.remove-number').fadeIn().css('display', 'block');
+    }
+});
+
+$(document).on('click','.remove-number', function () {
+    phoneCount = phoneCount - 1;
+
+    if(phoneCount > 1){
+        var index = parseInt($('.label-phone-div').length) - 1;
+        $('.label-phone-div-parent').children().last().remove();
+    } else {
+        $('body').find('.remove-number').hide();
+        $('body').find('.add-number').fadeIn();
+    }
 });
 
 $(document).ready(function(){

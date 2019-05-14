@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
                     </li>
                     <li>
                         <a href="summary.html">
-                            Резюме
+                            Резюме (скоро)
                         </a>
                     </li>
                 </ul>
@@ -34,16 +35,11 @@
             <li class="right">
                 <ul>
                     <li>
-                        <a href="bonuses.html">
-                            Бонусы
-                        </a>
-                    </li>
-                    <li>
                         <ul>
                             <li>
                                 <a href="javascript:;;">AZ</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="javascript:;;">RU</a>
                             </li>
                             <li>
@@ -81,9 +77,76 @@
                 </button>
             </li>
             <li class="right">
-                <a href="vacancy-post.html">
-                    Разместить вакансию
-                </a>
+                <button class="post-vacancy-btn">
+						<span>
+							Разместить вакансию
+						</span>
+
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="1" d="M11.0711 6.00002L6.03552 11.0356L0.999977 6.00002" stroke="white"/>
+                    </svg>
+
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="vacancy-post.html" class="dropdown-item">
+                                    <ul>
+                                        <li>
+                                            <div class="plus">
+                                                <img src="img/plus.svg" alt="">
+                                            </div>
+                                        </li>
+                                        <li>
+												<span>
+													Бесплатное размещение
+												</span>
+                                            <label>
+                                                Заполните форму
+                                                с необходимыми полями
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vacancy-post-premium.html" class="dropdown-item">
+                                    <ul>
+                                        <li>
+                                            <img src="img/nitro.svg" alt="">
+                                        </li>
+                                        <li>
+												<span>
+													Быстрое размещение
+												</span>
+                                            <label>
+                                                С помощью текстового
+                                                или аудиосообщения
+                                            </label>
+                                            <div>
+                                                <div class="premium-button" onclick="location.href = 'vacancy-post-premium.html#text'">
+                                                    <img src="img/subtract.svg" alt="" class="icon">
+                                                    <span>
+															20
+														</span>
+                                                    <img src="img/manat.svg" alt="" class="manat">
+                                                </div>
+                                                <div class="premium-button" onclick="location.href = 'vacancy-post-premium.html#audio'">
+                                                    <img src="img/audio.svg" alt="" class="icon">
+                                                    <span>
+															30
+														</span>
+                                                    <img src="img/manat.svg" alt="" class="manat">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+
+
             </li>
         </ul>
     </div>
@@ -106,14 +169,27 @@
                             <label>
                                 Категория
                             </label>
-                            <select>
-                                <option value="0" selected>
-                                    Информационные технологии
-                                </option>
-                                <option value="1">Информационные технологии</option>
-                                <option value="2">Информационные технологии</option>
+                            <select class="large-search-1">
+                                <option value="0">Не имеет значения</option>
+                                <option value="1">Дизайн</option>
+                                <option value="2">Образование и наука</option>
                                 <option value="3">Информационные технологии</option>
-                                <option value="4">Информационные технологии</option>
+                                <option value="0">Не имеет значения</option>
+                                <option value="1">Дизайн</option>
+                                <option value="2">Образование и наука</option>
+                                <option value="3">Информационные технологии</option>
+                                <option value="0">Не имеет значения</option>
+                                <option value="1">Дизайн</option>
+                                <option value="2">Образование и наука</option>
+                                <option value="3">Информационные технологии</option>
+                                <option value="0">Не имеет значения</option>
+                                <option value="1">Дизайн</option>
+                                <option value="2">Образование и наука</option>
+                                <option value="3">Информационные технологии</option>
+                                <option value="0">Не имеет значения</option>
+                                <option value="1">Дизайн</option>
+                                <option value="2">Образование и наука</option>
+                                <option value="3">Информационные технологии</option>
                             </select>
                         </div>
                     </li>
@@ -122,7 +198,7 @@
                             <label>
                                 Категория
                             </label>
-                            <select>
+                            <select class="large-search-2">
                                 <option value="0" selected>
                                     Не имеет значения
                                 </option>
@@ -138,7 +214,7 @@
                             <label>
                                 Категория
                             </label>
-                            <select>
+                            <select class="large-search-3">
                                 <option value="0" selected>
                                     Не имеет значения
                                 </option>
@@ -194,7 +270,7 @@
                         <label>
                             Категория
                         </label>
-                        <select class="required sss" required>
+                            <select class="required sss" required data-parsley-error-message="This value is required">
                             <option value="">
                                 Выберите категорию
                             </option>
@@ -239,21 +315,44 @@
 
                     <div class="label-part">
                         <label>
-                            Зарплата
+                            Зарплата (AZN)
                         </label>
-                        <div class="label-price-div">
-                            <div class="input-price">
-                                <input type="number" class="required" placeholder="0" required>
-                                <span>-</span>
-                                <input type="number" class="required" placeholder="16 000" required>
-                            </div>
 
-                            <div>
-                                <input type="checkbox" id="price-checkbox">
-                                <label for="price-checkbox">
-                                    и проценты от продаж
-                                </label>
-                            </div>
+                        <div class="input-price-div">
+                            <ul class="input-ul input-price-ul">
+                                <li>
+                                    <span class="pre">От</span>
+                                    <input type="number" class="required" id="salary-1" placeholder="0" maxlength="5" minlength="1" required>
+                                    <span class="equal-salary-error">
+                                        This fields should not be equal
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="pre">До</span>
+                                    <input type="number" class="required" id="salary-2" placeholder="25000" maxlength="5" minlength="1" required>
+                                    <span class="equal-salary-error">
+                                        This fields should not be equal
+                                    </span>
+                                </li>
+                                <li>
+                                    * Чтобы указать точную зарплату, заполните только одно поле
+
+                                </li>
+                            </ul>
+                            <ul class="input-price-right-ul">
+                                <li>
+                                    <input type="checkbox" id="vacancy-agree">
+                                    <label for="vacancy-agree">
+                                        На основе собеседования
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="vacancy-percent">
+                                    <label for="vacancy-percent">
+                                        + проценты
+                                    </label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -267,11 +366,11 @@
                         </label>
                         <ul class="input-ul">
                             <li>
-                                <span>От</span>
+                                <span class="pre">От</span>
                                 <input type="number" class="required" placeholder="18" maxlength="2" minlength="2">
                             </li>
                             <li>
-                                <span>До</span>
+                                <span class="pre">До</span>
                                 <input type="number" class="required" placeholder="75" maxlength="2" minlength="2">
                             </li>
                         </ul>
@@ -320,6 +419,26 @@
                         </ul>
                     </div>
 
+                    <div class="label-part select-part">
+                        <label>
+                            График работы
+                        </label>
+                        <select class="required sss" required>
+                            <option value="">
+                                Выберите
+                            </option>
+                            <option value="1">
+                                09:00 - 18:00
+                            </option>
+                            <option value="2">
+                               09:00 - 13:00
+                            </option>
+                            <option value="3">
+                                14:00 - 18:00
+                            </option>
+                        </select>
+                    </div>
+
                     <div class="label-part">
                         <label>
                             Обязанности
@@ -348,22 +467,31 @@
                         <label>
                             Номер телефона
                         </label>
-                        <div class="label-phone-div">
-                            <div class="input-price">
-                                <input type="text" class="phone" placeholder="012 345 67 89" required maxlength="10">
-                            </div>
+                        <div class="label-phone-div-parent">
+                            <div class="label-phone-div">
+                                <div class="input-price">
+                                    <input type="text" class="phone" placeholder="012 345 67 89" required maxlength="10">
+                                </div>
 
-                            <input type="checkbox" id="phone-checkbox-1">
-                            <label for="phone-checkbox-1">
-                                Отображать в объявлении
-                            </label>
+                                <input type="checkbox" id="phone-checkbox-1">
+                                <label for="phone-checkbox-1">
+                                    Отображать в объявлении
+                                </label>
+                            </div>
                         </div>
+
                         <a href="javascript:;;" class="add-number">
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.25 7.03125V7.96875C11.25 8.16211 11.0918 8.32031 10.8984 8.32031H8.32031V10.8984C8.32031 11.0918 8.16211 11.25 7.96875 11.25H7.03125C6.83789 11.25 6.67969 11.0918 6.67969 10.8984V8.32031H4.10156C3.9082 8.32031 3.75 8.16211 3.75 7.96875V7.03125C3.75 6.83789 3.9082 6.67969 4.10156 6.67969H6.67969V4.10156C6.67969 3.9082 6.83789 3.75 7.03125 3.75H7.96875C8.16211 3.75 8.32031 3.9082 8.32031 4.10156V6.67969H10.8984C11.0918 6.67969 11.25 6.83789 11.25 7.03125ZM14.7656 7.5C14.7656 11.5137 11.5137 14.7656 7.5 14.7656C3.48633 14.7656 0.234375 11.5137 0.234375 7.5C0.234375 3.48633 3.48633 0.234375 7.5 0.234375C11.5137 0.234375 14.7656 3.48633 14.7656 7.5ZM13.3594 7.5C13.3594 4.2627 10.7373 1.64062 7.5 1.64062C4.2627 1.64062 1.64062 4.2627 1.64062 7.5C1.64062 10.7373 4.2627 13.3594 7.5 13.3594C10.7373 13.3594 13.3594 10.7373 13.3594 7.5Z" fill="#FFBF00"/>
                             </svg>
                             <span>
                                 Добавить еще один номер телефона
+                            </span>
+                        </a>
+                        <a href="javascript:;;" class="remove-number">
+                            <img src="img/remove-number.svg" alt="">
+                            <span>
+                                 Удалить номер телефона
                             </span>
                         </a>
                     </div>
@@ -536,6 +664,9 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <img src="img/statistic.png" alt="">
+            </li>
         </ul>
     </div>
 </footer>
@@ -566,6 +697,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
 <script type="text/javascript" src="js/parsley.min.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
