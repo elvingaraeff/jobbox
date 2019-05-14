@@ -65,7 +65,7 @@ table {
   font-weight: 900;
   font-style: normal;
 }
-.complain-popup-modal .epm-inside .checkbox-part input[type=checkbox]:after, .premium-post .container .premium-inside #vacancy-with-text .label-phone-div input[type=checkbox]:after, .premium-popup .premium-popup-self .header, .large-search .container > ul > li:first-child ul li:not(:first-child) .nice-select:after, .large-search .container > ul > li:first-child ul li:first-child .nice-select:after, .post .container .form-ul > li .checkbox-part input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-phone-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .select-ul li > label:after, .post .container .form-ul > li .label-part .input-price-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-price-div input[type=checkbox]:after, .post .container .form-ul > li .label-part.select-part label:after {
+.complain-popup-modal .epm-inside .checkbox-part input[type=checkbox]:after, .premium-post .container .premium-inside #vacancy-with-audio .label-phone-div input[type=checkbox]:after, .premium-post .container .premium-inside #vacancy-with-text .label-phone-div input[type=checkbox]:after, .premium-popup .premium-popup-self .header, .large-search .container > ul > li:first-child ul li:not(:first-child) .nice-select:after, .large-search .container > ul > li:first-child ul li:first-child .nice-select:after, .post .container .form-ul > li .checkbox-part input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-phone-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .select-ul li > label:after, .post .container .form-ul > li .label-part .input-price-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-price-div input[type=checkbox]:after, .post .container .form-ul > li .label-part.select-part label:after {
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   background-size: cover !important;
@@ -73,7 +73,7 @@ table {
   background-repeat: no-repeat !important;
 }
 
-.complain-popup-modal .epm-inside .checkbox-part input[type=checkbox]:after, .complain-popup-modal .epm-inside, .delete-popup-modal .epm-inside, .edit-popup-modal .epm-inside, .premium-post .container .premium-inside #vacancy-with-text .label-phone-div input[type=checkbox]:after, .premium-popup .premium-popup-self .header .popup .item .popup-item-2, .premium-popup .premium-popup-self .header .popup .item .popup-item-1, .premium-popup .premium-popup-self .header .popup, .premium-popup .premium-popup-self .header img, .premium-popup .premium-popup-self, .large-search .container .mob-large-search-panel > svg, .post .container .form-ul > li .checkbox-part input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-phone-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .input-price-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-price-div input[type=checkbox]:after, .best-employers .container ul li img {
+.complain-popup-modal .epm-inside .checkbox-part input[type=checkbox]:after, .complain-popup-modal .epm-inside, .delete-popup-modal .epm-inside, .edit-popup-modal .epm-inside, .premium-post .container .premium-inside #vacancy-with-audio .label-phone-div input[type=checkbox]:after, .premium-post .container .premium-inside #vacancy-with-text .label-phone-div input[type=checkbox]:after, .premium-popup .premium-popup-self .header .popup .item .popup-item-2, .premium-popup .premium-popup-self .header .popup .item .popup-item-1, .premium-popup .premium-popup-self .header .popup, .premium-popup .premium-popup-self .header img, .premium-popup .premium-popup-self, .large-search .container .mob-large-search-panel > svg, .post .container .form-ul > li .checkbox-part input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-phone-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .input-price-div input[type=checkbox]:after, .post .container .form-ul > li .label-part .label-price-div input[type=checkbox]:after, .best-employers .container ul li img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -112,7 +112,7 @@ table {
   transition: all 0.2s ease-in;
 }
 
-.delete-popup-modal .epm-inside .header, .edit-popup-modal .epm-inside .header, .premium-post .container .premium-inside #vacancy-with-text .label-phone-div, .premium-post .container .premium-inside, .premium-post .container .premium-post-ul, .premium-post .container h2, .header-panel .right button .dropdown > ul > li a.dropdown-item ul li:last-child div.premium-button, .header-panel .right button .dropdown > ul > li a.dropdown-item ul li:last-child div, .header-panel .right button .dropdown > ul > li a.dropdown-item ul li:first-child .plus, .header-panel .right button .dropdown > ul > li a.dropdown-item ul, .premium-popup .premium-popup-self .desc ul, .premium-popup .premium-popup-self .header .popup .item .popup-item-1, .large-search .container > ul > li:last-child ul, .large-search .container > ul > li:first-child ul, .large-search .container > ul, .posting .container > ul li.left > ul > li a ul, .posting .container > ul li.left > a ul, .posting .container > ul, .post .container .form-ul > li .label-part .label-phone-div, .post .container .form-ul > li .label-part .select-ul, .post .container .form-ul > li .label-part .input-price-div, .post .container .form-ul > li .label-part .input-ul, .post .container .form-ul, .cat-view .container .large-desc, .cat-view .container .middle > li div ul, .cat-view .container .middle, .cat-view .container .header > li.right ul, .cat-view .container .header > li.left .address, .cat-view .container .header > li.left .breadcrumb, .cat-view .container .header, .category-self .container .middle > li a .address, .category-self .container .middle > li a .title, .category-self .container .middle, .category-self .container .top, .copyright .container ul, footer .container > ul > li:first-child ul, footer .container > ul, .footer-top .container > ul > li.first ul, .footer-top .container > ul, .best-employers .container ul, .premium-vacancies .container > ul > li.simple a .address, .premium-vacancies .container > ul > li.simple a .title > span .icon-pack, .premium-vacancies .container > ul > li.chosen a .address, .premium-vacancies .container > ul > li.chosen a .title > span .icon-pack, .latest-vacancies .container > ul > li.simple a .address, .latest-vacancies .container > ul > li.simple a .title > span .icon-pack, .latest-vacancies .container > ul > li.chosen a .address, .latest-vacancies .container > ul > li.chosen a .title > span .icon-pack, .header-bottom-panel .container ul li a, .header-panel .container > ul, header .container > ul > li.right > ul > li ul, header .container > ul > li.right > ul, header .container > ul > li.left ul, header .container > ul {
+.delete-popup-modal .epm-inside .header, .edit-popup-modal .epm-inside .header, .premium-post .container .premium-inside #vacancy-with-audio .label-phone-div, .premium-post .container .premium-inside #vacancy-with-text .label-phone-div, .premium-post .container .premium-inside, .premium-post .container .premium-post-ul, .premium-post .container h2, .header-panel .right button .dropdown > ul > li a.dropdown-item ul li:last-child div.premium-button, .header-panel .right button .dropdown > ul > li a.dropdown-item ul li:last-child div, .header-panel .right button .dropdown > ul > li a.dropdown-item ul li:first-child .plus, .header-panel .right button .dropdown > ul > li a.dropdown-item ul, .premium-popup .premium-popup-self .desc ul, .premium-popup .premium-popup-self .header .popup .item .popup-item-1, .large-search .container > ul > li:last-child ul, .large-search .container > ul > li:first-child ul, .large-search .container > ul, .posting .container > ul li.left > ul > li a ul, .posting .container > ul li.left > a ul, .posting .container > ul, .post .container .form-ul > li .label-part .label-phone-div, .post .container .form-ul > li .label-part .select-ul, .post .container .form-ul > li .label-part .input-price-div, .post .container .form-ul > li .label-part .input-ul, .post .container .form-ul, .cat-view .container .large-desc, .cat-view .container .middle > li div ul, .cat-view .container .middle, .cat-view .container .header > li.right ul, .cat-view .container .header > li.left .address, .cat-view .container .header > li.left .breadcrumb, .cat-view .container .header, .category-self .container .middle > li a .address, .category-self .container .middle > li a .title, .category-self .container .middle, .category-self .container .top, .copyright .container ul, footer .container > ul > li:first-child ul, footer .container > ul, .footer-top .container > ul > li.first ul, .footer-top .container > ul, .best-employers .container ul, .premium-vacancies .container > ul > li.simple a .address, .premium-vacancies .container > ul > li.simple a .title > span .icon-pack, .premium-vacancies .container > ul > li.chosen a .address, .premium-vacancies .container > ul > li.chosen a .title > span .icon-pack, .latest-vacancies .container > ul > li.simple a .address, .latest-vacancies .container > ul > li.simple a .title > span .icon-pack, .latest-vacancies .container > ul > li.chosen a .address, .latest-vacancies .container > ul > li.chosen a .title > span .icon-pack, .header-bottom-panel .container ul li a, .header-panel .container > ul, header .container > ul > li.right > ul > li ul, header .container > ul > li.right > ul, header .container > ul > li.left ul, header .container > ul {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -690,7 +690,7 @@ header .container > ul > li.right > ul > li ul li.active a {
   }
 }
 .latest-vacancies .container > ul > li.chosen {
-  height: 268px;
+  height: 312px;
 }
 @media (max-width: 500px) {
   .latest-vacancies .container > ul > li.chosen {
@@ -829,7 +829,7 @@ header .container > ul > li.right > ul > li ul li.active a {
   border-bottom: 1px solid rgba(0, 57, 165, 0.4);
 }
 .latest-vacancies .container > ul > li.simple {
-  height: 124px;
+  height: 146px;
 }
 .latest-vacancies .container > ul > li.simple a {
   display: inline-block;
@@ -1182,7 +1182,7 @@ header .container > ul > li.right > ul > li ul li.active a {
   }
 }
 .premium-vacancies .container > ul > li.chosen {
-  height: 268px;
+  height: 312px;
 }
 @media (max-width: 500px) {
   .premium-vacancies .container > ul > li.chosen {
@@ -1321,7 +1321,7 @@ header .container > ul > li.right > ul > li ul li.active a {
   border-bottom: 1px solid rgba(0, 57, 165, 0.4);
 }
 .premium-vacancies .container > ul > li.simple {
-  height: 124px;
+  height: 146px;
 }
 .premium-vacancies .container > ul > li.simple a {
   display: inline-block;
@@ -3205,6 +3205,9 @@ footer .container > ul > li:nth-child(2) ul li a:hover, footer .container > ul >
   opacity: 1;
   visibility: visible;
 }
+.post .container .form-ul > li .label-part .input-price-div input[type=checkbox]:focus {
+  border: 1px solid #000 !important;
+}
 .post .container .form-ul > li .label-part .input-price-div label {
   font-size: 14px;
   letter-spacing: 0.015em;
@@ -3319,6 +3322,9 @@ footer .container > ul > li:nth-child(2) ul li a:hover, footer .container > ul >
   opacity: 1;
   visibility: visible;
 }
+.post .container .form-ul > li .label-part .label-phone-div input[type=checkbox]:focus {
+  border: 1px solid #000 !important;
+}
 .post .container .form-ul > li .label-part .label-phone-div label {
   font-size: 16px;
   letter-spacing: 0.015em;
@@ -3426,6 +3432,9 @@ footer .container > ul > li:nth-child(2) ul li a:hover, footer .container > ul >
 .post .container .form-ul > li .checkbox-part input[type=checkbox]:checked:after {
   opacity: 1;
   visibility: visible;
+}
+.post .container .form-ul > li .checkbox-part input[type=checkbox]:focus {
+  border: 1px solid #000 !important;
 }
 .post .container .form-ul > li .checkbox-part label {
   font-size: 16px;
@@ -4768,10 +4777,14 @@ footer .container > ul > li:nth-child(2) ul li a:hover, footer .container > ul >
 .premium-post .container .premium-inside #vacancy-with-text .label-part .textarea-part textarea::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
+.premium-post .container .premium-inside #vacancy-with-text .label-part .textarea-part textarea:focus {
+  background: #fafafa !important;
+  border: 1px solid #000 !important;
+}
 .premium-post .container .premium-inside #vacancy-with-text .label-part .textarea-part .bottom-part {
   position: absolute;
   left: 15px;
-  width: calc(100% - 30px);
+  width: calc(100% - 35px);
   background: #fff;
   bottom: 4px;
   padding-bottom: 11px;
@@ -5106,6 +5119,120 @@ footer .container > ul > li:nth-child(2) ul li a:hover, footer .container > ul >
   display: inline-block;
   margin-left: 5px;
 }
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div {
+  margin-bottom: 14px;
+}
+@media (max-width: 500px) {
+  .premium-post .container .premium-inside #vacancy-with-audio .label-phone-div {
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+}
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div .input-price {
+  position: relative;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .premium-post .container .premium-inside #vacancy-with-audio .label-phone-div .input-price {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div .input-price input[type=text] {
+  background: #fff;
+  width: 142px;
+  height: 45px;
+  padding: 0 15px;
+  border: 1px solid #BDBDBD;
+  font-size: 16px;
+  letter-spacing: 0.015em;
+  color: #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .premium-post .container .premium-inside #vacancy-with-audio .label-phone-div .input-price input[type=text] {
+    width: 100%;
+  }
+}
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div .input-price input[type=text]::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div input[type=checkbox] {
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BDBDBD;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 5px;
+  margin-left: 26px;
+  margin-right: 3px;
+  margin-top: 7px;
+}
+@media (max-width: 500px) {
+  .premium-post .container .premium-inside #vacancy-with-audio .label-phone-div input[type=checkbox] {
+    margin-left: 0;
+  }
+}
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div input[type=checkbox]:after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 11px;
+  background: url("../img/check.svg");
+  opacity: 0;
+  visibility: hidden;
+}
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div input[type=checkbox]:checked:after {
+  opacity: 1;
+  visibility: visible;
+}
+.premium-post .container .premium-inside #vacancy-with-audio .label-phone-div label {
+  font-size: 16px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  opacity: 0.5;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.premium-post .container .premium-inside #vacancy-with-audio .add-number-audio {
+  margin-top: 0px;
+}
+.premium-post .container .premium-inside #vacancy-with-audio .add-number-audio span {
+  font-size: 16px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  opacity: 0.5;
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
+.premium-post .container .premium-inside #vacancy-with-audio .remove-number-audio {
+  margin-top: 0px;
+  display: none;
+}
+.premium-post .container .premium-inside #vacancy-with-audio .remove-number-audio img {
+  width: 14px;
+  position: relative;
+  top: -1px;
+}
+.premium-post .container .premium-inside #vacancy-with-audio .remove-number-audio span {
+  font-size: 16px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  opacity: 0.5;
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
 .premium-post .container .premium-inside #vacancy-with-audio button {
   height: 50px;
   -webkit-border-radius: 5px;
@@ -5171,6 +5298,10 @@ footer .container > ul > li:nth-child(2) ul li a:hover, footer .container > ul >
 }
 .premium-post .container .premium-inside form.deactive .title-bar-inside:after {
   opacity: 0;
+}
+.premium-post .container .premium-inside input:focus {
+  background: #fafafa !important;
+  border: 1px solid #000 !important;
 }
 
 .header-bottom-panel .container ul li a i {
@@ -5512,17 +5643,21 @@ footer .container > ul > li:nth-child(2) ul li a:hover, footer .container > ul >
   opacity: 0.4;
 }
 .complain-popup-modal .epm-inside span {
-  display: block;
   width: 100%;
   padding-left: 25px;
   font-size: 13px;
-  color: #afafaf;
+  color: #ff0000;
   margin-bottom: 9px;
   position: relative;
+  display: none;
 }
 .complain-popup-modal .epm-inside span:before {
   content: "*";
   margin-right: 3px;
+}
+.complain-popup-modal .epm-inside span.error {
+  display: block;
+  border: none !important;
 }
 .complain-popup-modal .epm-inside .submit-part {
   text-align: center;
@@ -5597,6 +5732,7 @@ textarea.parsley-success {
   margin-top: 7px;
   color: #FF0000;
   width: 100% !important;
+  letter-spacing: 0.2px;
 }
 
 .parsley-errors-list.filled {

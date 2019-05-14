@@ -827,7 +827,7 @@ header{
                 }
 
                 &.chosen{
-                    height: 268px;
+                    height: 312px;
 
                     @media (max-width: 500px){
                         height: auto;
@@ -989,7 +989,7 @@ header{
                 }
 
                 &.simple{
-                    height: 124px;
+                    height: 146px;
 
                     a{
                         display: inline-block;
@@ -1412,7 +1412,7 @@ header{
                 }
 
                 &.chosen{
-                    height: 268px;
+                    height: 312px;
 
                     @media (max-width: 500px){
                         height: auto;
@@ -1574,7 +1574,7 @@ header{
                 }
 
                 &.simple{
-                    height: 124px;
+                    height: 146px;
 
                     a{
                         display: inline-block;
@@ -3812,6 +3812,10 @@ footer{
                         opacity: 1;
                         visibility: visible;
                     }
+
+                    &:focus{
+                        border: 1px solid #000 !important;
+                    }
                 }
 
                 label{
@@ -3938,6 +3942,10 @@ footer{
                         opacity: 1;
                         visibility: visible;
                     }
+
+                    &:focus {
+                        border: 1px solid #000 !important;
+                    }
                 }
 
                 label{
@@ -4062,6 +4070,10 @@ footer{
                   &:checked:after{
                       opacity: 1;
                       visibility: visible;
+                  }
+
+                  &:focus{
+                      border: 1px solid #000 !important;
                   }
               }
 
@@ -5685,11 +5697,17 @@ footer{
                             &::placeholder{
                                 color: rgba(0,0,0,.3);
                             }
+
+                            &:focus{
+                                background: #fafafa !important;
+                                border: 1px solid #000 !important;
+                            }
                         }
+
                         .bottom-part{
                             position: absolute;
                             left: 15px;
-                            width: calc(100% - 30px);
+                            width: calc(100% - 35px);
                             background: #fff;
                             bottom: 4px;
                             padding-bottom: 11px;
@@ -6065,6 +6083,133 @@ footer{
                     }
                 }
 
+                .label-phone-div{
+                    margin-bottom: 14px;
+                    @extend %flex;
+
+                    @media (max-width: 500px){
+                        margin-bottom: 25px;
+                        flex-wrap: wrap;
+                    }
+
+                    .input-price{
+                        position: relative;
+                        display: inline-block;
+
+                        @media (max-width: 500px){
+                            display: block;
+                            margin-bottom: 5px;
+                            width: 100%;
+                        }
+
+                        input[type='text']{
+                            background: #fff;
+                            width: 142px;
+                            height: 45px;
+                            padding: 0 15px;
+                            border: 1px solid #BDBDBD;
+                            font-size: 16px;
+                            letter-spacing: 0.015em;
+                            color: #000;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            border-radius: 5px;
+
+                            @media (max-width: 500px){
+                                width: 100%;
+                            }
+
+                            &::placeholder{
+                                color: rgba(0,0,0,.4);
+                            }
+                        }
+                    }
+
+                    input[type='checkbox']{
+                        background: #fff;
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #BDBDBD;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        -webkit-appearance: none;
+                        -moz-appearance:    none;
+                        appearance:         none;
+                        position: relative;
+                        top: 5px;
+                        margin-left: 26px;
+                        margin-right: 3px;
+                        margin-top: 7px;
+
+                        @media (max-width: 500px){
+                            margin-left: 0;
+                        }
+
+                        &:after{
+                            position: absolute;
+                            content: '';
+                            width: 16px;
+                            height: 11px;
+                            background: url('../img/check.svg');
+                            @extend %bgc;
+                            @extend %itemcenter;
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+
+                        &:checked:after{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    label{
+                        font-size: 16px;
+                        letter-spacing: 0.015em;
+                        color: #000000;
+                        opacity: 0.5;
+                        padding-top: 5px;
+                        padding-left: 5px;
+                    }
+                }
+
+                .add-number-audio{
+                    margin-top: 0px;
+
+                    span{
+                        font-size: 16px;
+                        letter-spacing: 0.015em;
+                        color: #000000;
+                        opacity: 0.5;
+                        position: relative;
+                        top: -2px;
+                        margin-left: 5px;
+                    }
+                }
+
+
+                .remove-number-audio{
+                    img{
+                        width: 14px;
+                        position: relative;
+                        top: -1px;
+                    }
+                    margin-top: 0px;
+
+                    span{
+                        font-size: 16px;
+                        letter-spacing: 0.015em;
+                        color: #000000;
+                        opacity: 0.5;
+                        position: relative;
+                        top: -2px;
+                        margin-left: 5px;
+                    }
+
+                    display: none;
+                }
+
                 button{
                     height: 50px;
                     -webkit-border-radius: 5px;
@@ -6137,6 +6282,13 @@ footer{
                     &:after{
                         opacity: 0;
                     }
+                }
+            }
+
+            input{
+                &:focus{
+                    background: #fafafa !important;
+                    border: 1px solid #000 !important;
                 }
             }
         }
@@ -6530,17 +6682,22 @@ footer{
         }
 
         span{
-            display: block;
             width: 100%;
             padding-left: 25px;
             font-size: 13px;
-            color: #afafaf;
+            color: #ff0000;
             margin-bottom: 9px;
             position: relative;
+            display: none;
 
             &:before{
                 content: '*';
                 margin-right: 3px;
+            }
+
+            &.error{
+                display: block;
+                border: none !important;
             }
         }
 
@@ -6619,6 +6776,7 @@ textarea.parsley-success {
         margin-top: 7px;
         color: #FF0000;
         width: 100% !important;
+        letter-spacing: 0.2px;
     }
 }
 

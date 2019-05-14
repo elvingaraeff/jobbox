@@ -264,18 +264,29 @@ $(function () {
 		$(document).on('click','.add-number', function () {
 			phoneCount = phoneCount + 1;
 
-			if(phoneCount <= 3){
-				$(phoneClone).insertAfter('.label-phone-div:last');
+			if(phoneCount <= 2){
+				$(phoneClone).insertAfter('.label-phone-div-parent-left .label-phone-div:last');
 
-				var index = parseInt($('.label-phone-div-parent>div').length);
+				var index = parseInt($('.label-phone-div-parent-left>div').length);
 
-				$('.label-phone-div-parent>div:last label').attr('for', 'phone-checkbox-' + index);
-				$('.label-phone-div-parent>div:last [type="checkbox"]').attr('id', 'phone-checkbox-' + index);
+				$('.label-phone-div-parent-left>div:last label').attr('for', 'phone-checkbox-' + index);
+				$('.label-phone-div-parent-left>div:last [type="checkbox"]').attr('id', 'phone-checkbox-' + index);
 				$('.phone').mask('000 000 00 00');
 
-				$('.label-phone-div-parent>div:last input[type="text"]').attr('name', 'phones['+ index +'][phone]');
-				$('.label-phone-div-parent>div:last input[type="checkbox"]').attr('name', 'phones['+ index +'][display]');
-			} else {
+				$('.label-phone-div-parent-left>div:last input[type="text"]').attr('name', 'phones['+ index +'][phone]');
+				$('.label-phone-div-parent-left>div:last input[type="checkbox"]').attr('name', 'phones['+ index +'][display]');
+			} else if(phoneCount = 3){
+				$(phoneClone).insertAfter('.label-phone-div-parent-left .label-phone-div:last');
+
+				var index = parseInt($('.label-phone-div-parent-left>div').length);
+
+				$('.label-phone-div-parent-left>div:last label').attr('for', 'phone-checkbox-' + index);
+				$('.label-phone-div-parent-left>div:last [type="checkbox"]').attr('id', 'phone-checkbox-' + index);
+				$('.phone').mask('000 000 00 00');
+
+				$('.label-phone-div-parent-left>div:last input[type="text"]').attr('name', 'phones['+ index +'][phone]');
+				$('.label-phone-div-parent-left>div:last input[type="checkbox"]').attr('name', 'phones['+ index +'][display]');
+
 				$('body').find('.add-number').hide();
 				$('body').find('.remove-number').fadeIn().css('display', 'block');
 			}
@@ -285,12 +296,64 @@ $(function () {
 			phoneCount = phoneCount - 1;
 
 			if(phoneCount > 1){
+				var index = parseInt($('.label-phone-div-parent-left .label-phone-div').length) - 1;
+				$('.label-phone-div-parent-left').children().last().remove();
+			} else if(phoneCount = 1){
 				var index = parseInt($('.label-phone-div').length) - 1;
-				$('.label-phone-div-parent').children().last().remove();
-			} else {
+				$('.label-phone-div-parent-left').children().last().remove();
+
 				$('body').find('.remove-number').hide();
 				$('body').find('.add-number').fadeIn();
 			}
+		});
+
+		$(document).on('click','.add-number-audio', function () {
+			phoneCount = phoneCount + 1;
+
+			if(phoneCount <= 2){
+				$(phoneClone).insertAfter('.label-phone-div-parent-right .label-phone-div:last');
+
+				var index = parseInt($('.label-phone-div-parent-right>div').length);
+
+				$('.label-phone-div-parent-right>div:last label').attr('for', 'phone-checkbox-1-' + index);
+				$('.label-phone-div-parent-right>div:last [type="checkbox"]').attr('id', 'phone-checkbox-1-' + index);
+				$('.phone').mask('000 000 00 00');
+
+				$('.label-phone-div-parent-right>div:last input[type="text"]').attr('name', 'phones['+ index +'][phone]');
+				$('.label-phone-div-parent-right>div:last input[type="checkbox"]').attr('name', 'phones['+ index +'][display]');
+			} else if (phoneCount = 3){
+				$(phoneClone).insertAfter('.label-phone-div:last');
+
+				var index = parseInt($('.label-phone-div-parent-right>div').length);
+
+				$('.label-phone-div-parent-right>div:last label').attr('for', 'phone-checkbox-1-' + index);
+				$('.label-phone-div-parent-right>div:last [type="checkbox"]').attr('id', 'phone-checkbox-1-' + index);
+				$('.phone').mask('000 000 00 00');
+
+				$('.label-phone-div-parent-right>div:last input[type="text"]').attr('name', 'phones['+ index +'][phone]');
+				$('.label-phone-div-parent-right>div:last input[type="checkbox"]').attr('name', 'phones['+ index +'][display]');
+
+				$('body').find('.add-number-audio').hide();
+				$('body').find('.remove-number-audio').fadeIn().css('display', 'block');
+			}
+			console.log(phoneCount);
+		});
+
+		$(document).on('click','.remove-number-audio', function () {
+			phoneCount = phoneCount - 1;
+
+			if(phoneCount > 1){
+				var index = parseInt($('.label-phone-div-parent-right .label-phone-div').length) - 1;
+				$('.label-phone-div-parent-right').children().last().remove();
+			} else if(phoneCount = 1){
+				var index = parseInt($('.label-phone-div').length) - 1;
+				$('.label-phone-div-parent-right').children().last().remove();
+
+				$('body').find('.remove-number-audio').hide();
+				$('body').find('.add-number-audio').fadeIn();
+			}
+
+			console.log(phoneCount);
 		});
 	}
 });
